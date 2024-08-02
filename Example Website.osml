@@ -1,0 +1,24 @@
+<title>My Advanced OSML Website!
+<h1>Welcome to My Advanced OSML Website!
+<h2>Created by Your Name!
+<h3>Explore Custom Web Development
+<p x=10 y=20>This is a sophisticated paragraph that appears at position (10, 20). This custom markup language allows you to position elements precisely.
+<p>This paragraph doesn't specify a position. It's a simple demonstration of how paragraphs without coordinates are handled.
+<p x=120 y=40>Another paragraph positioned at (30, 40). This helps you see how multiple positioned elements are managed on the screen.
+<h2>Features
+<p x=50 y=60>This website showcases various features of the OSML protocol, including:
+<p> - Custom tag handling
+<image src=https://media.istockphoto.com/id/1483360428/photo/cute-young-tabby-cat-playing-in-a-garden.jpg?s=1024x1024&w=is&k=20&c=saHzHnfuuHQ8hYo0nIevXsuDFJegDnmroDaafN2WfG0=>
+<image src=https://github.com/Frogithezhrda/Saban-Web/blob/main/cats2.jpg>
+<p> - Precise element positioning
+<p> - Dynamic content management
+<h3>Get Started
+<p x=70 y=80>To get started with creating your own OSML websites, follow these steps:
+<p>1. Define your tags and their content.
+<p>2. Use the `handleTag` function to manage the rendering of each tag.
+<p x=90 y=100>3. Experiment with different tag types and positions to create a unique layout.
+<h2>Conclusion
+<image x=450 y=120 width=120 height=100 src=https://github.com/Frogithezhrda/Saban-Web/blob/main/cats.jpg>
+<p>With OSML, you can create custom websites that cater to your specific needs. Whether it's a simple page or a complex layout, OSML gives you the flexibility to design it your way.
+<button>Get Started!
+<button x=350 y=120>Learn More!
