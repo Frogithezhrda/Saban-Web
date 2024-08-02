@@ -1,0 +1,10 @@
+﻿  prog.c
+C:\Users\Cyber_User\source\repos\OmersBrowserProtocol\WebBrowserFood\prog.c(214,48): warning C4090: '=': different 'const' qualifiers
+  Generating code
+  Previous IPDB and IOBJ mismatch, fall back to full compilation.
+C:\Users\Cyber_User\source\repos\OmersBrowserProtocol\WebBrowserFood\handleSocket.c(99): warning C4715: 'sendMessage': not all control paths return a value
+  All 480 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  WebBrowserFood.vcxproj -> C:\Users\Cyber_User\source\repos\OmersBrowserProtocol\x64\Release\WebBrowserFood.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.

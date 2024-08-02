@@ -1,0 +1,2 @@
+﻿  prog.c
+C:\Users\Cyber_User\source\repos\WebBrowserFood\WebBrowserFood\prog.c(1,10): fatal error C1083: Cannot open include file: 'gtk/gtk.h': No such file or directory

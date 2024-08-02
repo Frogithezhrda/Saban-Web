@@ -1,0 +1,5 @@
+﻿  prog.c
+C:\Users\Cyber_User\source\repos\OmersBrowserProtocol\WebBrowserFood\prog.c(212,48): warning C4090: '=': different 'const' qualifiers
+  WebBrowserFood.vcxproj -> C:\Users\Cyber_User\source\repos\OmersBrowserProtocol\x64\Debug\WebBrowserFood.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.

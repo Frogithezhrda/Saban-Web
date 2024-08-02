@@ -1,0 +1,61 @@
+window {
+    background: #FFFFFF; /* White background */
+}
+
+entry {
+    border: 2px solid #C4D7F2;
+    border-radius: 3px;
+    font-size: x-large;
+    outline-color: #C4D7F2;
+}
+
+.custom-button {
+    background: #96E0F4; /* Light gray background */
+    color: black; /* Black text */
+    font-size: x-large;
+    padding: 5px 10px;
+    border: none;
+    margin: 0;
+}
+.notebook {
+    background-color: #FFFFFF; /* White background */
+
+}
+/* Style for the notebook tabs */
+.notebook tab {
+    background-color: #FFFFFF; 
+    border: 1px solid #AABECF; 
+    font-size: large;
+    padding: 6px 12px;
+    margin-right: 2px; /* Adjust margin between tabs */
+    border-top-left-radius: 4px; /* Rounded corners for the first tab */
+    border-top-right-radius: 4px; /* Rounded corners for the last tab */
+}
+
+    /* Style for the notebook tab labels */
+    .notebook tab label {
+        font-weight: bold; /* Bold font for tab labels */
+        color: #333333; /* Text color of tab labels */
+    }
+
+/* Style for the notebook tab content area */
+.notebook tab-content {
+    background-color: #FFFFFF; /* Background color of the tab content area */
+    padding: 10px; /* Padding inside the tab content area */
+}
+
+.notebook tab:checked {
+    background-color: #C4F3FF; /* Background color of the active tab */
+}
+
+.notebook tab:hover {
+    background-color: #D7F7FF; /* Background color of the active tab */
+}
+
+.custom-button:checked {
+    background-color: #5ECFFF; /* Active/checked background color */
+    color: black; /* Ensure text color is black in active state */
+}
+.enter_button {
+    margin: 5px;
+}
