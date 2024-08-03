@@ -13,8 +13,8 @@ void handleVisualMain(GtkWidget* widget, char* infoBuf)
 
 void extractTag(char* infoBuf)
 {
-    int width = 50;
-    int height = 50;
+    int width = MIN_VID_SIZE;
+    int height = MIN_VID_SIZE;
     char* openingTag = NULL;
     char* closingTag = NULL;
     char* tagType = NULL;
@@ -82,6 +82,7 @@ void extractTag(char* infoBuf)
         yPoint = strstr(tagAttributes, "y=");
         sitePoint = strstr(tagAttributes, "location=");
         srcPoint = strstr(tagAttributes, "src=");
+        //for each of them we will add the amount that comes before the point lets say width= is 6 letters than we will go 6 letters forward
         if (heightPoint != NULL)
         {
             height = atoi(heightPoint + 7);
@@ -129,7 +130,6 @@ void extractTag(char* infoBuf)
             free(sendedMedia);
             if (tagContent != NULL)
             {
-                // Handle the received tag content
                 handleTag(tagType, tagContent, x, y, width, height, site);
                 printf("Extracted tag type: %s, Content: %s\n", tagType, tagContent);
                 free(tagContent);
