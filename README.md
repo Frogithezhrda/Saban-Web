@@ -7,19 +7,15 @@
         <li><strong>Media Handling</strong>: Supports displaying images and managing video playback.</li>
         <li><strong>Interactive Elements</strong>: Includes buttons, links, and other interactive components.</li>
     </ul>
-    
     <h2>Key Features</h2>
     <ul>
         <li><strong>Media Display</strong>: Handles images and videos with custom scaling and playback.</li>
         <li><strong>Interactive Tags</strong>: Supports interactive elements like buttons and links.</li>
         <li><strong>Custom Tag Processing</strong>: Parses and handles HTML-like tags for dynamic content.</li>
     </ul>
-    
     <h2>Upcoming Features</h2>
     <p>Integration of socket functionality to enable real-time communication between users in the browser.</p>
-    
     <h2>Tag Overview</h2>
-    
     <h3>Text Tags</h3>
     <ul>
         <li><strong>&lt;p&gt;</strong>: Defines a paragraph.
@@ -31,7 +27,6 @@
 &lt;h3&gt;This is a small header&lt;/h3&gt;</code></pre>
         </li>
     </ul>
-    
     <h3>Interactive Tags</h3>
     <ul>
         <li><strong>&lt;button&gt;</strong>: Creates a clickable button.
@@ -41,7 +36,6 @@
             <pre><code>&lt;link text="Visit Site" location="http://example.com"/&gt;</code></pre>
         </li>
     </ul>
-    
     <h3>Media Tags</h3>
     <ul>
         <li><strong>&lt;image&gt;</strong>: Displays an image.
@@ -51,7 +45,6 @@
             <pre><code>&lt;video src="path/to/video.mp4" width="320" height="240"/&gt;</code></pre>
         </li>
     </ul>
-    
     <h2>Project Status</h2>
     <p>The Saban Web project is currently under development and not yet finished. The existing implementation provides foundational features and serves as a starting point for further development.</p>
 </body>
