@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saban Web</title>
-</head>
 <body>
     <h1>Saban Web</h1>
     <p><strong>Saban Web</strong> is a custom web browser and web application framework developed using GTK and C. This project aims to provide a tailored browsing experience with support for various media types and interactive features.</p>
