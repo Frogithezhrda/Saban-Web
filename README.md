@@ -1,8 +1,8 @@
 <body>
     <h1>Saban Web</h1>
     <p><strong>Saban Web</strong> is a custom web browser and web application framework developed using GTK and C. This project aims to provide a tailored browsing experience with support for various media types and interactive features.</p>
-    
     <h2>Project Overview</h2>
+    
     <ul>
         <li><strong>Custom Browser</strong>: A browser built with GTK and C for a customized browsing experience.</li>
         <li><strong>Media Handling</strong>: Supports displaying images and managing video playback.</li>
