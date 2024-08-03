@@ -137,8 +137,9 @@ void extractTag(char* infoBuf)
         }
 
         tagContent = (char*)malloc((length + 1) * sizeof(char));
-        strncpy(tagContent, contentStart, length);
-        tagContent[length] = '\0';
+        printf("CONTENT: %s", contentStart);
+        strncpy(tagContent, contentStart, length - 1);
+        tagContent[length - 1] = '\0';
 
         handleTag(tagType, tagContent, x, y, width, height, site);
         printf("Extracted tag type: %s, Content: %s\n", tagType, tagContent);
@@ -263,15 +264,14 @@ void handleTag(char* tagType, char* tagContent, int x, int y, int width, int hei
 
 void updateCurrentTabLabel(char* newLabel)
 {
+    GtkWidget* notebook = newWindow;
+    gint currentPage = gtk_notebook_get_current_page(GTK_NOTEBOOK(notebook));
+    GtkWidget* label = gtk_notebook_get_tab_label(GTK_NOTEBOOK(notebook), gtk_notebook_get_nth_page(GTK_NOTEBOOK(notebook), currentPage));
     if (newWindow == NULL)
     {
         g_print("No Title.\n");
         return;
     }
-
-    GtkWidget* notebook = newWindow;
-    gint currentPage = gtk_notebook_get_current_page(GTK_NOTEBOOK(notebook));
-    GtkWidget* label = gtk_notebook_get_tab_label(GTK_NOTEBOOK(notebook), gtk_notebook_get_nth_page(GTK_NOTEBOOK(notebook), currentPage));
 
     if (GTK_IS_LABEL(label))
     {
@@ -285,18 +285,11 @@ void updateCurrentTabLabel(char* newLabel)
 
 void buttonManager(char* tagContent, int x, int y)
 {
-    GtkWidget* label = NULL;
     GtkStyleContext* context = NULL;
-    GtkWidget* button = gtk_button_new();
-    label = gtk_label_new(tagContent);
-    gtk_container_add(GTK_CONTAINER(button), label);
-
-    context = gtk_widget_get_style_context(label);
-    gtk_style_context_add_class(context, "enter_button");
+    GtkWidget* button = gtk_button_new_with_label(tagContent);
+    context = gtk_widget_get_style_context(button);
+    gtk_style_context_add_class(context, ".enter_button");
     g_signal_connect(button, "clicked", G_CALLBACK(buttonClicked), NULL);
-    gtk_widget_set_halign(button, GTK_ALIGN_CENTER);
-    gtk_widget_set_valign(button, GTK_ALIGN_CENTER);
-
     addWidgetToContentBox(button, x, y);
 }
 
