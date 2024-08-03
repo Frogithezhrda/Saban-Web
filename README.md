@@ -20,6 +20,7 @@
     <ul>
         <li><strong>&lt;p&gt;</strong>: Defines a paragraph.
             <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+            <p><em>Note:</em> The closing tag </p> is not required for proper display and may be omitted if not necessary.</p>
         </li>
         <li><strong>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;</strong>: Defines headers of varying sizes.
             <pre><code>&lt;h1&gt;This is a large header&lt;/h1&gt;
@@ -33,16 +34,19 @@
             <pre><code>&lt;button&gt;Click Me&lt;/button&gt;</code></pre>
         </li>
         <li><strong>&lt;link&gt;</strong>: Defines a hyperlink.
-            <pre><code>&lt;link text="Visit Site" location="http://example.com"/&gt;</code></pre>
+            <pre><code>&lt;link location="http://example.com"&gt;Visit Site&lt;/link&gt;</code></pre>
+            <p><em>Note:</em> The link works as follows: <code>&lt;link location="DOMAINTOGO"&gt;TEXT FOR DISPLAY&lt;/link&gt;</code></p>
         </li>
     </ul>
     <h3>Media Tags</h3>
     <ul>
         <li><strong>&lt;image&gt;</strong>: Displays an image.
-            <pre><code>&lt;image src="path/to/image.jpg" width="100" height="100"/&gt;</code></pre>
+            <pre><code>&lt;image src="http://example.com/path/to/image.jpg" width=100 height=100/&gt;</code></pre>
+            <p><em>Note:</em> The <code>src</code> attribute should use an HTTP or HTTPS URL. Quotes around the URL are optional.</p>
         </li>
         <li><strong>&lt;video&gt;</strong>: Embeds a video.
-            <pre><code>&lt;video src="path/to/video.mp4" width="320" height="240"/&gt;</code></pre>
+            <pre><code>&lt;video src="http://example.com/path/to/video.mp4" width=320 height=240/&gt;</code></pre>
+            <p><em>Note:</em> The <code>src</code> attribute should use an HTTP or HTTPS URL. Quotes around the URL are optional.</p>
         </li>
     </ul>
     <h2>Project Status</h2>
