@@ -23,7 +23,7 @@
             <p><em>Note:</em> The closing tag </p> is not required for proper display and may be omitted if not necessary.</p>
         </li>
         <li><strong>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;</strong>: Defines headers of varying sizes.
-            <pre><code>&lt;h1&gt;This is a large header&lt;/h1&gt;
+            <pre><code>&lt;h1&gt;This is a large header
 &lt;h2&gt;This is a medium header
 &lt;h3&gt;This is a small header</code></pre>
         </li>
