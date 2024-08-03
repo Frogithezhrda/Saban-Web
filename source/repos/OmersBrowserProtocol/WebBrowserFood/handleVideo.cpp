@@ -1,5 +1,4 @@
 #include "handleVideo.h"
-#include <gtk/gtk.h>
 
 using namespace cv;
 
@@ -29,6 +28,7 @@ gboolean openVideo(VideoHandler* handler, const char* filename)
 // Function to get a frame from a specific video
 bool getFrame(VideoHandler* handler, size_t index, unsigned char** frameData, int* width, int* height) 
 {
+    cv::Mat rgbFrame;
     if (index >= handler->captures.size() || !handler->captures[index].isOpened())
     {
         g_warning("Error: VideoCapture is not opened or index out of range.");
@@ -54,7 +54,6 @@ bool getFrame(VideoHandler* handler, size_t index, unsigned char** frameData, in
     *height = frame.rows;
 
     // Convert Mat to RGB format
-    cv::Mat rgbFrame;
     cv::cvtColor(frame, rgbFrame, cv::COLOR_BGR2RGB);
 
     // Allocate memory for frame data
@@ -85,7 +84,8 @@ void releaseVideo(VideoHandler* handler, size_t index)
 
 void releaseAllVideos(VideoHandler* handler)
 {
-    for (int i = 0; i < handler->captures.size(); ++i) {
+    for (int i = 0; i < handler->captures.size(); ++i)
+    {
         handler->captures[i].release();
     }
     handler->captures.clear();
@@ -98,6 +98,8 @@ gboolean drawVideoFrame(GtkWidget* widget, cairo_t* cr, gpointer data)
     GtkWidget* videoDrawingArea = NULL;
     unsigned char* frameData = NULL;
     int frameWidth = 0, frameHeight = 0;
+    GdkPixbuf* scaledPixbuf = NULL;
+    GdkPixbuf* pixbuf = NULL;
     if (index >= handler.videoDrawingAreas.size()) 
     {
         g_warning("Error: VideoDrawingArea index out of range.");
@@ -136,7 +138,7 @@ gboolean drawVideoFrame(GtkWidget* widget, cairo_t* cr, gpointer data)
     int offsetX = (drawingAreaWidth - newWidth) / 2;
     int offsetY = (drawingAreaHeight - newHeight) / 2;
 
-    GdkPixbuf* pixbuf = gdk_pixbuf_new_from_data(
+    pixbuf = gdk_pixbuf_new_from_data(
         frameData,
         GDK_COLORSPACE_RGB,
         FALSE,
@@ -148,13 +150,14 @@ gboolean drawVideoFrame(GtkWidget* widget, cairo_t* cr, gpointer data)
         NULL
     );
 
-    if (pixbuf == NULL) {
+    if (pixbuf == NULL) 
+    {
         g_warning("Error: Failed to create pixbuf from frame data.\n");
         free(frameData);
         return FALSE;
     }
 
-    GdkPixbuf* scaledPixbuf = gdk_pixbuf_scale_simple(pixbuf, newWidth, newHeight, GDK_INTERP_BILINEAR);
+    scaledPixbuf = gdk_pixbuf_scale_simple(pixbuf, newWidth, newHeight, GDK_INTERP_BILINEAR);
 
     if (scaledPixbuf == NULL) 
     {
@@ -166,16 +169,12 @@ gboolean drawVideoFrame(GtkWidget* widget, cairo_t* cr, gpointer data)
 
     gdk_cairo_set_source_pixbuf(cr, scaledPixbuf, offsetX, offsetY);
     cairo_paint(cr);
-
-    // Clean up
     g_object_unref(pixbuf);
     g_object_unref(scaledPixbuf);
     free(frameData);
 
     return TRUE;
 }
-
-// Function to refresh video frames
 gboolean refreshVideoFrame(gpointer data) 
 {
     int index = (int)data;
