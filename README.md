@@ -19,23 +19,23 @@
     <h3>Text Tags</h3>
     <ul>
         <li><strong>&lt;p&gt;</strong>: Defines a paragraph.
-            <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+            <pre><code>&lt;p&gt;This is a paragraph.</code></pre>
             <p><em>Note:</em> The closing tag </p> is not required for proper display and may be omitted if not necessary.</p>
         </li>
         <li><strong>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;</strong>: Defines headers of varying sizes.
             <pre><code>&lt;h1&gt;This is a large header&lt;/h1&gt;
-&lt;h2&gt;This is a medium header&lt;/h2&gt;
-&lt;h3&gt;This is a small header&lt;/h3&gt;</code></pre>
+&lt;h2&gt;This is a medium header
+&lt;h3&gt;This is a small header</code></pre>
         </li>
     </ul>
     <h3>Interactive Tags</h3>
     <ul>
         <li><strong>&lt;button&gt;</strong>: Creates a clickable button.
-            <pre><code>&lt;button&gt;Click Me&lt;/button&gt;</code></pre>
+            <pre><code>&lt;button&gt;Click Me</code></pre>
         </li>
         <li><strong>&lt;link&gt;</strong>: Defines a hyperlink.
             <pre><code>&lt;link location="http://example.com"&gt;Visit Site</code></pre>
-            <p><em>Note:</em> The link works as follows: <code>&lt;link location=domain&gt;text&lt;/link&gt;</code></p>
+            <p><em>Note:</em> The link works as follows: <code>&lt;link location=domain&gt;text</code></p>
         </li>
     </ul>
     <h3>Media Tags</h3>
