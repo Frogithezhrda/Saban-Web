@@ -15,28 +15,43 @@ Tag Overview
 Text Tags
 <p>: Defines a paragraph.
 
-Usage: <p>This is a paragraph.</p>
+Usage:
+html
+Copy code
+<p>This is a paragraph.</p>
 <h1>, <h2>, <h3>: Defines headers of varying sizes.
 
 Usage:
+html
+Copy code
 <h1>This is a large header</h1>
 <h2>This is a medium header</h2>
 <h3>This is a small header</h3>
 Interactive Tags
 <button>: Creates a clickable button.
 
-Usage: <button>Click Me</button>
+Usage:
+html
+Copy code
+<button>Click Me</button>
 <link>: Defines a hyperlink.
 
-Usage: <link text="Visit Site" location="http://example.com"/>
+Usage:
+html
+Copy code
+<link text="Visit Site" location="http://example.com"/>
 Media Tags
 <image>: Displays an image.
 
-Usage: <image src="path/to/image.jpg" width="100" height="100"/>
+Usage:
+html
+Copy code
+<image src="path/to/image.jpg" width="100" height="100"/>
 <video>: Embeds a video.
 
-Usage: <video src="path/to/video.mp4" width="320" height="240"/>
+Usage:
+html
+Copy code
+<video src="path/to/video.mp4" width="320" height="240"/>
 Project Status
 The Saban Web project is currently under development and not yet finished. The existing implementation provides foundational features and serves as a starting point for further development.
-
-
