@@ -34,18 +34,18 @@
             <pre><code>&lt;button&gt;Click Me&lt;/button&gt;</code></pre>
         </li>
         <li><strong>&lt;link&gt;</strong>: Defines a hyperlink.
-            <pre><code>&lt;link location="http://example.com"&gt;Visit Site&lt;/link&gt;</code></pre>
-            <p><em>Note:</em> The link works as follows: <code>&lt;link location="DOMAINTOGO"&gt;TEXT FOR DISPLAY&lt;/link&gt;</code></p>
+            <pre><code>&lt;link location="http://example.com"&gt;Visit Site</code></pre>
+            <p><em>Note:</em> The link works as follows: <code>&lt;link location=domain&gt;text&lt;/link&gt;</code></p>
         </li>
     </ul>
     <h3>Media Tags</h3>
     <ul>
         <li><strong>&lt;image&gt;</strong>: Displays an image.
-            <pre><code>&lt;image src="http://example.com/path/to/image.jpg" width=100 height=100/&gt;</code></pre>
+            <pre><code>&lt;image src=http://example.com/path/to/image.jpg width=100 height=100&gt;</code></pre>
             <p><em>Note:</em> The <code>src</code> attribute should use an HTTP or HTTPS URL. Quotes around the URL are optional.</p>
         </li>
         <li><strong>&lt;video&gt;</strong>: Embeds a video.
-            <pre><code>&lt;video src="http://example.com/path/to/video.mp4" width=320 height=240/&gt;</code></pre>
+            <pre><code>&lt;video src=http://example.com/path/to/video.mp4 width=320 height=240&gt;</code></pre>
             <p><em>Note:</em> The <code>src</code> attribute should use an HTTP or HTTPS URL. Quotes around the URL are optional.</p>
         </li>
     </ul>
