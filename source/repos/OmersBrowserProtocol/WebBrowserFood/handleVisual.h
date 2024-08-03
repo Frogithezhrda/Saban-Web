@@ -11,6 +11,9 @@
 #include <gdk-pixbuf/gdk-pixbuf.h>
 #include "handleSocket.h"
 
+#define MIN_VID_SIZE 50
+
+
 #ifdef __cplusplus
 #include <opencv2/opencv.hpp>
 extern "C" {
