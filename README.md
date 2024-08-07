@@ -34,7 +34,7 @@
             <pre><code>&lt;button&gt;Click Me</code></pre>
         </li>
         <li><strong>&lt;link&gt;</strong>: Defines a hyperlink.
-            <pre><code>&lt;link location="http://example.com"&gt;Visit Site</code></pre>
+            <pre><code>&lt;link location=raviv.rizz&gt;Visit Site</code></pre>
             <p><em>Note:</em> The link works as follows: <code>&lt;link location=domain&gt;text</code></p>
         </li>
     </ul>
